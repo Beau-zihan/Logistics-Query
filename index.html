@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>物流查询</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/56.css" media="all"> 
+</head>
+<body>
+<div class="wl-body">
+<div class="wl-search">
+<div class="wl-s">
+<a href="javascript:;" class="scom">选择快递公司</a>
+<div class="wl-selectcom">
+<span class="ishow"></span>
+<div class="wl-selectcom-top">
+    <ul>
+	<li class="current">常用</li>
+	<li>A-D</li>
+	<li>E-H</li>
+	<li>J-M</li>
+	<li>O-S</li>
+	<li>T-W</li>
+	<li>X-Z</li>
+    </ul>
+    <a href="javascript:;">&times;</a>
+</div>
+<div class="wl-selectcom-box">
+    <dl class="wl-hot">
+	<dt>快递：</dt>
+	<dd com="ems" info="11183">EMS</dd>
+	<dd com="youzhengguonei" info="11185">中国邮政</dd>
+	<dd com="shentong" info="400-889-5543">申通快递</dd>
+	<dd com="shunfeng" info="400-811-1111">顺丰速运</dd>
+	<dd com="yuantong" info="021-69777888/999">圆通速递</dd>
+	<dd com="zhongtong" info="021-39777777">中通速递</dd>
+	<dd com="rufengda" info="400-010-6660">如风达</dd>
+	<dd com="yunda" info="021-39207888">韵达快运</dd>
+	<dd com="tiantian" info="4001-888-888">天天快递</dd>
+	<dd com="huitongkuaidi" info="021-6296 3636">汇通快运</dd>
+	<dd com="quanfengkuaidi" info="400-100-0001">全峰快递</dd>
+	<dd com="debangwuliu" info="400-830-5555">德邦物流</dd>
+	<dd com="zhaijisong" info="400-6789-000">宅急送</dd>
+    </dl>
+    <dl class="wl-hot">
+	<dt>物流：</dt>
+	<dd com="debangwuliu" info="400-830-5555">德邦物流</dd>
+	<dd com="tiandihuayu" info="400-808-6666">天地华宇</dd>
+	<dd com="suer" info="4008822168">速尔物流</dd>
+	<dd com="youshuwuliu" info="400-1111-119">优速物流</dd>
+	<dd com="yuanchengwuliu" info="400-820-1646">远成物流</dd>
+	<dd com="jiayiwuliu" info="400-660-5656">佳怡物流</dd>
+	<dd com="longbanwuliu" info="021-39283333">龙邦物流</dd>
+	<dd com="shentong" info="400-889-5543">申通物流</dd>
+    </dl>
+    <dl class="wl-hot">
+	<dt>国际：</dt>
+	<dd com="emsguoji" info="11183">EMS国际</dd>
+	<dd com="youzhengguoji" info="11185">邮政国际</dd>
+	<dd com="ups" info="800-820-8388,400-820-8388">UPS</dd>
+	<dd com="dhl" info="800-810-8000">DHL</dd>
+	<dd com="fedex" info="800-988-1888,400-886-1888">Fedex(国际)</dd>
+	<dd com="tnt" info="800-820-9868">TNT</dd>
+    </dl>
+</div>
+<div style="display: none" class="wl-selectcom-box">
+    <dl>
+	<dt>A：</dt>
+	<dd com="aae" info="400-6100-400">AAE</dd>
+	<dd com="anxindakuaixi" info="021-54224681">安信达</dd>
+    </dl>
+    <dl>
+	<dt>B：</dt>
+	<dd com="baifudongfang" info="010—57169000">百福东方</dd>
+	<dd com="bht" info="010-58633508">BHT</dd>
+	<dd com="bangsongwuliu" info="021-20965696-823或824">邦送物流</dd>
+    </dl>
+    <dl>
+	<dt>C：</dt>
+	<dd com="cces" info="400-677-3777">希伊艾斯</dd>
+	<dd com="city100" info="010-52932760,52932762">城市100</dd>
+	<dd com="chuanxiwuliu" info="400-777-5656">传喜物流</dd>
+    </dl>
+    <dl>
+	<dt>D：</dt>
+	<dd com="debangwuliu" class="hot" info="400-830-5555 ">德邦物流</dd>
+	<dd com="dhl" class="hot" info="800-810-8000">DHL</dd>
+	<dd com="datianwuliu" info="400-626-1166">大田物流</dd>
+	<dd com="dpex" info="0755-88297707">DPEX</dd>
+	<dd com="dsukuaidi" info="0531-83165757">D速快递</dd>
+	<dd com="disifang" info="0755-33933895">递四方</dd>
+    </dl>
+
+</div>
+<div style="display: none" class="wl-selectcom-box">
+    <dl>
+	<dt>E：</dt>
+	<dd com="ems" class="hot" info="11183">EMS</dd>
+	<dd com="ems" info="11183">E邮宝</dd>
+	<dd com="emsguoji" class="hot" info="11183">EMS国际</dd>
+    </dl>
+    <dl>
+	<dt>F：</dt>
+	<dd com="rufengda" class="hot" info="400-010-6660">凡客如风达</dd>
+	<dd com="fedex" class="hot" info="800-988-1888,400-886-1888">Fedex(国际)</dd>
+	<dd com="fedexus" info="800-988-1888,400-886-1888">FedEx-美国</dd>
+	<dd com="feikangda" info="010-84223376,84223378">飞康达物流</dd>
+	<dd com="feikuaida" info="400-716-6666">飞快达</dd>
+	<dd com="fengxingtianxia" info="4000-404-909">风行天下</dd>
+	<dd com="feibaokuaidi" info="400-000-5566">飞豹快递</dd>
+    </dl>
+    <dl>
+	<dt>G：</dt>
+	<dd com="ganzhongnengda" info="400-620-1111">港中能达</dd>
+	<dd com="guangdongyouzhengwuliu" info="020-38181677">广东邮政</dd>
+	<dd com="gls" info="877-914-5465">GLS</dd>
+	<dd com="gongsuda" info="400-111-0005">共速达</dd>
+    </dl>
+    <dl>
+	<dt>H：</dt>
+	<dd com="huitongkuaidi" class="hot" info="021-6296 3636">汇通快运</dd>
+	<dd com="tiantian" class="hot" info="4001-888-888">海航天天</dd>
+	<dd com="tiandihuayu" class="hot" info="400-808-6666">华宇物流</dd>
+	<dd com="hengluwuliu" info="400-182-6666">恒路物流</dd>
+	<dd com="huaxialongwuliu" info="0755-61211999">华夏龙</dd>
+	<dd com="haimengsudi" info="400-080-6369">海盟速递</dd>
+	<dd com="huaqikuaiyun" info="400-626-2356">华企快运</dd>
+    </dl>
+
+</div>
+<div style="display: none" class="wl-selectcom-box">
+    <dl>
+	<dt>J：</dt>
+	<dd com="jiayiwuliu" class="hot" info="400-660-5656">佳怡物流</dd>
+	<dd com="jiajiwuliu" info="400-820-5566">佳吉物流</dd>
+	<dd com="jiayunmeiwuliu" info="0769-85162000/0769-85166425">加运美</dd>
+	<dd com="jinguangsudikuaijian" info="400-660-6488">京广速递</dd>
+	<dd com="jixianda" info="400-694-1256">急先达</dd>
+	<dd com="jinyuekuaidi" info="0769-85158039">晋越快递</dd>
+	<dd com="jietekuaidi" info="400-820-8585">捷特快递</dd>
+	<dd com="jindawuliu" info="0755-82262209">金大物流</dd>
+	<dd com="jialidatong" info="400-610-3188">嘉里大通</dd>
+    </dl>
+    <dl>
+	<dt>K：</dt>
+	<dd com="kuaijiesudi" info="400-830-4888">快捷速递</dd>
+	<dd com="kangliwuliu" info="400-156-5156">康力物流</dd>
+	<dd com="kuayue" info="4008-098-098">跨越物流</dd>
+    </dl>
+    <dl>
+	<dt>L：</dt>
+	<dd com="longbanwuliu" class="hot" info="021-39283333">龙邦物流</dd>
+	<dd com="lianhaowuliu" info="0769-88620000,85116666">联昊通</dd>
+	<dd com="lanbiaokuaidi" info="0769-82898999">蓝镖快递</dd>
+	<dd com="lejiedi" info="400-618-1400">乐捷递</dd>
+	<dd com="lianbangkuaidi" info="400-889-1888">联邦快递(国内)</dd>
+	<dd com="lijisong" info="400-028-5666">立即送</dd>
+	<dd com="longlangkuaidi" info="021-31171576 61552015">隆浪快递</dd>
+    </dl>
+    <dl>
+	<dt>M：</dt>
+	<dd com="minghangkuaidi" info="4008-17-4008">民航快递</dd>
+	<dd com="menduimen" info="400-700-7676">门对门</dd>
+	<dd com="meiguokuaidi" info="888-611-1888">美国快递</dd>
+	<dd com="mingliangwuliu" info="400-035-6568">明亮物流</dd>
+    </dl>
+
+</div>
+<div style="display: none" class="wl-selectcom-box">
+    <dl>
+	<dt>O：</dt>
+	<dd com="ocs" info="400-118-8588">OCS</dd>
+	<dd com="ontrac" info="800-334-5000">onTrac</dd>
+    </dl>
+    <dl>
+	<dt>Q：</dt>
+	<dd com="quanfengkuaidi" class="hot" info="400-100-0001">全峰快递</dd>
+	<dd com="quanchenkuaidi" info="0769-82026703">全晨快递</dd>
+	<dd com="quanjitong" info="400-017-9888">全际通</dd>
+	<dd com="quanritongkuaidi" info="020-86298999">全日通</dd>
+	<dd com="quanyikuaidi" info="400-678-1515">全一快递</dd>
+	<dd com="sevendays" info="400-882-1202">七天连锁</dd>
+    </dl>
+    <dl>
+	<dt>R：</dt>
+	<dd com="rufengda" info="400-010-6660">如风达</dd>
+    </dl>
+    <dl>
+	<dt>S：</dt>
+	<dd com="shunfeng" class="hot" info="400-811-1111">顺丰速运</dd>
+	<dd com="shentong"  class="hot" info="400-889-5543">申通快递</dd>
+	<dd com="suer" class="hot" info="4008822168">速尔物流</dd>
+	<dd com="santaisudi" info="400-881-8106">三态速递</dd>
+	<dd com="shenghuiwuliu" info="4008-222-222">盛辉物流</dd>
+	<dd com="shengfengwuliu" info="0591-83621111">盛丰物流</dd>
+	<dd com="shangda" info="021-54477891">上大物流</dd>
+	<dd com="shandonghaihong" info="400-632-9988">山东海红</dd>
+	<dd com="saiodi" info="4000-345-888">赛澳递</dd>
+	<dd com="sxhongmajia" info="0351-5225858">山西红马甲</dd>
+	<dd com="shenganwuliu" info="4006-618-169 ">圣安物流</dd>
+	<dd com="suijiawuliu" info="400-880-9771">穗佳物流</dd>
+    </dl>
+
+</div>
+<div style="display: none" class="wl-selectcom-box">
+    <dl>
+	<dt>T：</dt>
+	<dd com="tnt" class="hot" info="800-820-9868">TNT</dd>
+	<dd com="tiandihuayu" info="400-808-6666">天地华宇</dd>
+	<dd com="tiantian" info="4001-888-888">天天快递</dd>
+	<dd com="tonghetianxia" info="400-0056-516">通和天下</dd>
+    </dl>
+    <dl>
+	<dt>U：</dt>
+	<dd com="ups" class="hot" info="800-820-8388,400-820-8388">UPS</dd>
+	<dd com="youshuwuliu" class="hot" info="400-1111-119">优速物流</dd>
+	<dd com="usps" info="800-275-8777">USPS</dd>
+    </dl>
+    <dl>
+	<dt>W：</dt>
+	<dd com="wanjiawuliu" info="021-51592928">万家物流</dd>
+	<dd com="wxwl" info="400-820-8088">万象物流</dd>
+	<dd com="weitepai" info="400-606-0909">微特派</dd>
+    </dl>
+</div>
+<div style="display: none" class="wl-selectcom-box">
+    <dl>
+	<dt>X：</dt>
+	<dd com="xinbangwuliu" info="4008-000-222">新邦物流</dd>
+	<dd com="xinfengwuliu" info="400-830-6333">信丰物流</dd>
+	<dd com="xinhongyukuaidi" info="021-69781999">鑫飞鸿</dd>
+	<dd com="cces" info="400-677-3777">希伊艾斯(CCES)</dd>
+	<dd com="xinbangwuliu" info="4008-000-222">新邦物流</dd>
+	<dd com="neweggozzo" info="400-820-4400">新蛋奥硕物流</dd>
+	<dd com="hkpost" info="(852)-2921-2222">香港邮政</dd>
+    </dl>
+    <dl>
+	<dt>Y：</dt>
+	<dd com="yuantong" class="hot" info="021-69777888/999">圆通速递</dd>
+	<dd com="yunda" class="hot" info="021-39207888">韵达快运</dd>
+	<dd com="yuanchengwuliu" class="hot" info="400-820-1646">远成物流</dd>
+	<dd com="yuntongkuaidi" info="0769-38804886">运通快递</dd>
+	<dd com="yafengsudi" info="400-628-0018">亚风速递</dd>
+	<dd com="yibangwuliu" info="4008-000-666">一邦速递</dd>
+	<dd com="yuanweifeng" info="400-601-2228">源伟丰快递</dd>
+	<dd com="yuanzhijiecheng" info="400-081-2345">元智捷诚</dd>
+	<dd com="yuefengwuliu" info="852-23909969">越丰物流</dd>
+	<dd com="yuananda" info="0769--85021875">源安达</dd>
+	<dd com="yuanfeihangwuliu" info="0755-29778899,29778100">原飞航</dd>
+	<dd com="yinjiesudi" info="0755-88250666">银捷速递</dd>
+	<dd com="yitongfeihong" info="61501533-608">一统飞鸿</dd>
+    </dl>
+    <dl>
+	<dt>Z：</dt>
+	<dd com="youzhengguonei" class="hot" info="11185">中国邮政</dd>
+	<dd com="youzhengguoji" class="hot" info="11185">邮政国际</dd>
+	<dd com="zhongtong" class="hot" info="021-39777777">中通速递</dd>
+	<dd com="zhaijisong" class="hot" info="400-6789-000">宅急送</dd>
+	<dd com="ztky" info="400-000-5566">中铁快运</dd>
+	<dd com="coe" info="0755-83575000">中国东方</dd>
+	<dd com="zhongtiewuliu" info="95572">中铁物流</dd>
+	<dd com="zhongyouwuliu" info="11183">中邮物流</dd>
+	<dd com="zhongxinda" info="400-646-6665">忠信达</dd>
+	<dd com="zhongsukuaidi" info="11183">中速快件</dd>
+	<dd com="zhimakaimen" info="4001-056-056,88056056">芝麻开门</dd>
+	<dd com="zhengzhoujianhua" info="0371-65995266,86115588">郑州建华</dd>
+	<dd com="zhongtianwanyun" info="0531-68850629">中天万运</dd>
+	<dd com="zhimakaimen" info="4001-056-056,88056056">芝麻开门</dd>
+    </dl>
+</div>
+</div>
+</div>
+    <input type="text"	value="请输入快递单号" />
+    <a href="#" class="scha">查 询</a>
+</div>
+<div class="wl-info">
+    <span></span>
+    <a href="javascript:;" class="close">&times;</a>
+</div>
+<div class="wl-contact">
+    <i></i>
+    <b class="loading">正在查询中，请稍后......</b>
+</div>
+</div>
+<script type="text/javascript" src="js/jQuery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/56.js"></script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
+</body>
+</html>
