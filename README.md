@@ -4,3 +4,6 @@ jQuery快递(物流)查询，数据接口使用快递100的接口，实现百家
 
 ## 示例
 http://www.zi-han.net/case/56/
+
+## 注意
+请在服务器（如localhost）环境下打开
